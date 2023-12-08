@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript Assignment for Solomon Peter Gajereson</title>
+</head>
+<body>
+    <p id="hello">Some text</p>
+      <button id="myButton">Click me.....</button>
+      <button id="textChanger">Change the first text</button>
+    <div id="firstDiv">Read my text</div>
+        <button id="guy">Create some text</button>
+    <div id="emptyDiv"></div>
+    <button id="sector">Text me</button>
+    <div id="secondDiv">Can you text me?</div>
+    <input id="myInput" type="text" value="Your Name"/>
+
+    <script type="text/javascript">
+        document.getElementById("hello").innerHTML="Some more text";
+        document.getElementById("myButton").onclick=function(){
+         alert("Hey")
+        }
+        document.getElementById("textChanger").onclick=function(){
+            document.getElementById("firstDiv").innerHTML="This is unbelievable";
+        }
+        document.getElementById("guy").onclick=function(){
+            document.getElementById("emptyDiv").innerHTML="<ul><li>Girls</li><li>Boys</li></ul>"
+        }
+        var divId="firstDiv";
+        document.getElementById("sector").onclick=function(){
+            document.getElementById("secondDiv").style.display="none";
+        }
+        var newText=document.getElementById("myInput").value;
+        document.getElementById("secondDiv").innerHTML="newText";
+        myArray=["morning","day","night"]
+        console.log(myArray);
+    </script>
+</body>
+</html>
